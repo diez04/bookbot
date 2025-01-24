@@ -15,5 +15,17 @@ def number_of_words(words):
 
     print(count)
 
+def count_characters(text):
+    lowercase_text = text.lower()
+    count = 0
+    character_count = {}
+
+    for char in lowercase_text:
+        character_count[char] = lowercase_text.count(char)       
+        
+
+    return character_count
+
+
 book = main()
-number_of_words(book)
+print(count_characters(book))
